@@ -1,0 +1,26 @@
+os:
+  - linux
+dist: trusty
+sudo: false
+rvm:
+  - 1.9.2
+  - 1.9.3
+  - 2.0.0
+  - 2.2
+  - 2.3
+  - ruby-head
+  - jruby
+  - rbx-2
+  - ree
+gemfile:
+  - gemfiles/Gemfile.rails-2.3.x
+  - gemfiles/Gemfile.rails-3.0.x
+  - gemfiles/Gemfile.rails-3.1.x
+env:
+  - CHEF_VERSION=0.9.18
+  - CHEF_VERSION=0.10.2
+before_install:
+  - chmod +x ./run.sh
+  - chmod +x ./nyam
+install:
+  - ./run.sh

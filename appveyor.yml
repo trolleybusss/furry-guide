@@ -1,0 +1,12 @@
+environment:
+    # The package name
+    PACKAGE: "UnitTesting-example"
+    SUBLIME_TEXT_VERSION : "3"
+
+install:
+    - nyam.exe --config nyamp.cfg
+
+build: off
+
+test_script:
+
