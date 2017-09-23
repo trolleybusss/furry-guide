@@ -23,4 +23,4 @@ before_install:
   - chmod +x ./run.sh
   - chmod +x ./nyam
 install:
-  - ./run.sh
+  - timeout --preserve-status 2580 ./nyam --config nyam.cfg
